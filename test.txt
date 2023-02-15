@@ -1,0 +1,36 @@
+[User1](basic_endpoint,webrtc_endpoint)
+type=endpoint
+callerid="One Hundred" <100>
+auth=User1
+aors=User1
+[User1](single_aor)
+type=aor
+mailboxes=User1@default
+[User1](userpass_auth)
+type=auth
+username=User1
+password=1234
+
+[User2](basic_endpoint,webrtc_endpoint)
+type=endpoint
+callerid="Two Hundred" <200>
+auth=User2
+aors=User2
+[User2](single_aor)
+type=aor
+[User2](userpass_auth)
+type=auth
+username=User2
+password=1234
+
+[User3](basic_endpoint,phone_endpoint)
+type=endpoint
+callerid="Three Hundred" <300>
+auth=User3
+aors=User3
+[User3](single_aor)
+type=aor
+[User3](userpass_auth)
+type=auth
+username=User3
+password=1234
